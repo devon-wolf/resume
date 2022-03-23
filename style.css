@@ -1,0 +1,92 @@
+* {
+	--background: #f8f9fa;
+	--text: #212529;
+	--link: hsl(250, 20%, 25%);
+	--accent1: hsl(200, 34%, 25%);
+	--accent2: hsl(210, 14%, 25%);
+
+	box-sizing: border-box;
+}
+
+@media (prefers-color-scheme:dark) {
+	* {
+		--text: #f8f9fa;
+		--background: #212529;
+		--link: hsl(250, 20%, 75%);
+		--accent1: hsl(200, 34%, 75%);
+		--accent2: hsl(210, 14%, 75%);
+	}
+}
+
+body {
+	background-color: var(--background);
+	color: var(--text);
+	font-family: sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.wrapper {
+	padding: 1rem;
+	max-width: 600px;
+}
+
+a:link, a:visited {
+	color: var(--link);
+	text-decoration: none;
+}
+
+h1, h2 {
+	margin: 0;
+}
+
+p, li {
+	line-height: 1.75rem;
+}
+
+section {
+	margin: 2rem 0;
+}
+
+header div {
+	margin: 1rem 0;
+}
+
+h1, .project-summary {
+	color: var(--accent1);
+	font-weight: bold;
+}
+
+hr {
+	color: var(--link);
+}
+
+ul {
+	list-style: none;
+	padding-left: unset;
+}
+
+ul label, h2 {
+	font-weight: bold;
+	color: var(--accent2);
+}
+
+.horizontal-flex {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+}
+
+.tech-list, .school, .project, .job {
+	margin: 1.5rem;
+}
+
+.tech-summary, .job-title {
+	font-style: italic;
+}
+
+.job-details, .project-details {
+	list-style: disc;
+	padding-left: 1rem;
+}
