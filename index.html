@@ -4,38 +4,53 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="./assets/google-fonts/css/google-fonts.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/fontawesome/css/fontawesome.css"
+        />
+        <link rel="stylesheet" href="./assets/fontawesome/css/brands.css" />
+        <link rel="stylesheet" href="./assets/fontawesome/css/solid.css" />
         <link rel="stylesheet" href="./style.css" />
         <title>Devon Wolfkiel | Resume</title>
     </head>
     <body>
         <div class="wrapper">
             <header>
-                <h1>Devon Wolfkiel</h1>
-                <p><strong>Software Engineer</strong></p>
-                <div>
-                    <a
-                        href="https://github.com/devon-wolf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >GitHub</a
-                    >
-                    <a
-                        href="https://www.linkedin.com/in/devon-wolfkiel/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >LinkedIn</a
-                    >
+                <div id="title">
+                    <h1>Devon Wolfkiel</h1>
+                    <p><strong>Software Engineer</strong></p>
                 </div>
-                <div>
+                <div id="contact">
                     <a
                         href="mailto:devon.wolfkiel@pm.me"
                         target="_blank"
                         rel="noopener noreferrer"
-                        >devon.wolfkiel@pm.me</a
+                        aria-label="send email"
                     >
-                </div>
-                <div>
-                    <span>Portland, OR metro area</span>
+                        <i
+                            class="fa-solid fa-envelope"
+                            title="devon.wolfkiel@pm.me"
+                        ></i
+                    ></a>
+
+                    <a
+                        href="https://github.com/devon-wolf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub profile"
+                        ><i class="fa-brands fa-github" title="GitHub"></i
+                    ></a>
+                    <a
+                        href="https://www.linkedin.com/in/devon-wolfkiel/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn profile"
+                        ><i class="fa-brands fa-linkedin" title="LinkedIn"></i
+                    ></a>
                 </div>
             </header>
             <hr />
@@ -49,6 +64,16 @@
                 <p>
                     I thrive on intellectual challenge, and I hope to build
                     tools to facilitate creativity and the pursuit of knowledge.
+                </p>
+                <p>
+                    The best way to reach me is by email, at
+                    <a
+                        href="mailto:devon.wolfkiel@pm.me"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        devon.wolfkiel@pm.me</a
+                    >.
                 </p>
             </section>
             <hr />
@@ -78,7 +103,8 @@
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 >Site</a
-                            > | 
+                            >
+                            |
                             <a
                                 href="https://github.com/GIM-LLC/GIM"
                                 target="_blank"
@@ -117,7 +143,8 @@
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 >Site</a
-                            > | 
+                            >
+                            |
                             <a
                                 href="https://github.com/devon-wolf/magnus-apeye"
                                 target="_blank"
@@ -156,7 +183,8 @@
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 >Site</a
-                            > | 
+                            >
+                            |
                             <a
                                 href="https://github.com/momijizukamori/bookbinder-js"
                                 target="_blank"
@@ -255,55 +283,58 @@
             <section>
                 <h1>Technologies</h1>
                 <div class="horizontal-flex">
-                    <ul id="languages" class="tech-list">
-                        <label for="languages">Languages</label>
-                        <li>TypeScript</li>
-                        <li>HTML/CSS</li>
-                        <li>JavaScript</li>
-                        <li>Python</li>
-                    </ul>
-                    <ul id="frontend" class="tech-list">
-                        <label for="frontend">Frontend</label>
-                        <li>React</li>
-                        <li>Apollo Client</li>
-                    </ul>
-                    <ul id="backend" class="tech-list">
-                        <label for="backend">Backend</label>
-                        <li>Node</li>
-                        <li>Express</li>
-                        <li>GraphQL</li>
-                        <li>RESTful APIs</li>
-                        <li>Socket.io</li>
-                    </ul>
-                    <ul id="database" class="tech-list">
-                        <label for="database">Database</label>
-                        <li>PostgreSQL</li>
-                        <li>MongoDB</li>
-                        <li>Firebase</li>
-                    </ul>
-                    <ul id="frameworks" class="tech-list">
-                        <label for="frameworks">Frameworks</label>
-                        <li>Django</li>
-                        <li>Ruby on Rails</li>
-                    </ul>
-                    <ul id="industry-skills" class="tech-list">
-                        <label for="industry-skills">Industry Skills</label>
-                        <li>Test-Driven Development</li>
-                        <li>Remote Collaboration</li>
-                        <li>Pair Programming</li>
-                        <li>Agile Practices</li>
-                    </ul>
-                    <ul id="tools" class="tech-list">
-                        <label for="tools">Tools</label>
-                        <li>VS Code</li>
-                        <li>Git/GitHub/GitLab</li>
-                        <li>Heroku</li>
-                        <li>Netlify</li>
-                        <li>Google Cloud Platform</li>
-                        <li>Postman</li>
-                        <li>pgAdmin</li>
-                        <li>nx</li>
-                    </ul>
+                    <details>
+                        <summary>Languages</summary>
+                        <ul id="languages" class="tech-list">
+                            <li>TypeScript</li>
+                            <li>HTML/CSS</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Frameworks and Libraries</summary>
+                        <ul id="libs" class="tech-list">
+                            <li>React</li>
+                            <li>Node</li>
+                            <li>Express</li>
+                            <li>Apollo Client</li>
+                            <li>GraphQL</li>
+                            <li>Socket.io</li>
+                            <li>Django</li>
+                            <li>Ruby on Rails</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Database</summary>
+                        <ul id="database" class="tech-list">
+                            <li>PostgreSQL</li>
+                            <li>MongoDB</li>
+                            <li>Firebase</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Industry Skills</summary>
+                        <ul id="industry-skills" class="tech-list">
+                            <li>Test-Driven Development</li>
+                            <li>Remote Collaboration</li>
+                            <li>Pair Programming</li>
+                            <li>Agile Practices</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Tools</summary>
+                        <ul id="tools" class="tech-list">
+                            <li>VS Code</li>
+                            <li>Git/GitHub/GitLab</li>
+                            <li>Heroku</li>
+                            <li>Netlify</li>
+                            <li>Google Cloud Platform</li>
+                            <li>Postman</li>
+                            <li>pgAdmin</li>
+                            <li>nx</li>
+                        </ul>
+                    </details>
                 </div>
             </section>
         </div>
